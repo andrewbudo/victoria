@@ -45,7 +45,7 @@ jobs:
       - name: Convert files
         run: |
           pandoc "Отчёт лаба 1.md" -o lab1.docx
-          pandoc "Отчёт лаба 1.md" -o lab1.pdf --pdf-engine=xelatex -V mainfont="liberation serif"
+          pandoc "Отчёт лаба 1.md" -o lab1.pdf --pdf-engine=xelatex -V mainfont="Liberation Serif"
           cp "Отчёт лаба 1.md" lab1.md 
 
       - name: Create archive
