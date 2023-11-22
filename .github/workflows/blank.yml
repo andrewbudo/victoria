@@ -40,13 +40,16 @@ jobs:
           sudo apt update
           sudo apt install g++
           sudo apt install pandoc
-          # sudo apt install texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra texlive-xetex texlive-lang-cyrillic -y
+          sudo apt install texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra texlive-xetex texlive-lang-cyrillic -y
 
       - name: Convert files
-        run: pandoc "Отчёт лаба 1.md" -o lab1.docx
+        run: |
+          pandoc "Отчёт лаба 1.md" -o lab1.docx
+          pandoc "Отчёт лаба 1.md" -o lab1.pdf --pdf-engine=xelatex -V mainfont="liberation serif"
+          cp "Отчёт лаба 1.md" lab1.md 
 
       - name: Create archive
-        run: zip --junk-paths victoria lab1.docx
+        run: zip --junk-paths victoria lab1.docx lab1.pdf lab1.md
 
       - name: Create Release
         id: create_release
