@@ -34,3 +34,12 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: Install soft
+        run: |
+          sudo apt update
+          sudo apt install g++
+          sudo apt install pandoc
+      - name: Convert files
+        run: pandoc "Отчёт лаба 1.md" -o lab1.docx
+      - name: Create archive
+        run: zip --junk-paths victoria lab1.docx
