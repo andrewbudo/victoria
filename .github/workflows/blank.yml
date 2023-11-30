@@ -50,7 +50,8 @@ jobs:
 
 
       - name: Create presentation
-        run: pandoc --to=beamer --output=out.pdf test.md
+#        run: pandoc --to=beamer --output=out.pdf test.md
+        run: pandoc --to=beamer --include-in-header=./mystyle.tex --output=out.pdf test.md
 
       - name: Create archive
         run: zip --junk-paths victoria lab1.docx lab1.pdf lab1.md out.pdf
