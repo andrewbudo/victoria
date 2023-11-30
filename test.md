@@ -9,9 +9,9 @@ theme: Berlin
 
  TEXT1
 
-# slide 2
+# slide 2 с кириллицей
 
-Text 2
+Text 2 и русские буквы
 
 $$
 \sqrt{\frac{42}{37}}
