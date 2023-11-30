@@ -9,9 +9,9 @@ theme: Berlin
 
  TEXT1
 
-# слайд прещентации 2
+# slide 2
 
-Немного текста
+Text 2
 
 $$
 \sqrt{\frac{42}{37}}
