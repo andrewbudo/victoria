@@ -48,8 +48,12 @@ jobs:
           pandoc "Отчёт лаба 1.md" -o lab1.pdf --pdf-engine=xelatex -V mainfont="Liberation Serif"
           cp "Отчёт лаба 1.md" lab1.md 
 
+
+      - name: Create presentation
+        run: pandoc --to=beamer --output=out.pdf test.md
+
       - name: Create archive
-        run: zip --junk-paths victoria lab1.docx lab1.pdf lab1.md
+        run: zip --junk-paths victoria lab1.docx lab1.pdf lab1.md out.pdf
 
       - name: Create Release
         id: create_release
