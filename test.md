@@ -16,3 +16,18 @@ Text 2 и русские буквы
 $$
 \sqrt{\frac{42}{37}}
 $$
+
+# рисунки
+
+![скриншот](img/1.png)
+
+# Подсветка синтаксиса
+
+```cpp
+#include <iostream>
+
+int main()
+{
+    std::cout << "hello";
+}
+```
