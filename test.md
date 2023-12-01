@@ -31,3 +31,29 @@ int main()
     std::cout << "hello";
 }
 ```
+
+# Много кода
+
+```cpp
+#include <cstdio>
+#include <algorithm>
+
+int main() {
+	long long a1, a2, a3, a4;
+	scanf("%lld %lld %lld %lld", &a1, &a2, &a3, &a4);
+	long long s = std::min(a1, a2) + std::min(a3, a4);
+	long long left = 0;
+	long long right = 2000 * 1000 * 1000;
+	while (left + 1 < right) {
+		long long mid = (left + right) / 2;
+		if (mid * mid <= s) {
+			left = mid;
+		}
+		else {
+			right = mid;
+		}
+	}
+	printf("%lld", left);
+	return 0;
+}
+```
