@@ -1,7 +1,7 @@
 ---
-author: Andrew Budo
-title: My Awesome Presentation!
-institute: BNTU
+author: Андрей Будо
+title: Лекция 01
+institute: БНТУ
 theme: CambridgeUS
 ---
 
@@ -32,6 +32,9 @@ int main()
 }
 ```
 
+# ссылки
+Текст содержит [одну ссылку][link1]. И ещё одну [ссылку][link2] в тексте.
+
 # Много кода
 
 ```cpp
@@ -57,3 +60,8 @@ int main() {
 	return 0;
 }
 ```
+
+
+
+[link1]: www.google.com "Всплывающая подсказка"
+[link2]: www.ya.ru "ссылка на yandex"
