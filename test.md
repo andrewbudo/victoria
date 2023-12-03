@@ -1,6 +1,7 @@
 ---
 author: Андрей Будо
 title: Лекция 01
+subtitle: Угловые измерения 
 institute: БНТУ
 theme: CambridgeUS
 ---
