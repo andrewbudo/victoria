@@ -2,7 +2,7 @@
 author: Andrew Budo
 title: My Awesome Presentation!
 institute: BNTU
-theme: Berlin
+theme: CambridgeUS
 ---
 
 # Slide 1
